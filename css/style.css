@@ -3,40 +3,63 @@
 /* Grid Layout */
 #wrapper {
     display: grid;
-    width: 90%;
-    margin: auto;
-    min-height: 90vh;
-    background-color: white;
+    width: 100%;
+    
+    background-color: rgb(0, 0, 0);
+    grid-template-rows: 5px 100px 100px;
     grid-template-areas: "nv" "nv" "nv"
                          "hd" "hd" "hd"
                          "s1" "s1" "s1"
+                         "s2" "s2" "s2"
                          "ft" "ft" "ft";
 }
 
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+/* First Div */
+
 #nav {
     grid-area: nv;
-    background-color: rgb(204, 255, 18);
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border: 2px solid white;
+    
 }
+
 
 #header {
     grid-area: hd;
-    background-color: rgb(0, 187, 255);
+    background-color: rgb(0, 0, 0);
     color: white;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     align-content: center;
+    margin-bottom: 20px;
+    border: 2px solid white;
 }
+
 
 #sec1 {
     grid-area: s1;
-    background-color: rgb(255, 32, 184);
+    background-color: rgb(0, 0, 0);
     color: white;
-    
-    
+    border: 2px solid white;
+    height: 400px;
+}
+#sec2 {
+    grid-area: s2;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border: 2px solid white;
+    height: 400px;
 }
 
-#footer {
+
+ #footer {
     grid-area: ft;
     background-color: rgb(0, 0, 0);
     color: white;
@@ -46,6 +69,8 @@
     align-content: center;
     grid-template-areas: 
     "Profile" "WatchList";
+    border: 2px solid white;
+    margin-top: 20px;
 }
 
 /* Child Header "Film 1/2/3" */
